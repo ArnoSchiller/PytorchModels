@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  torchserve:
+    build: .
+    ports:
+     - "8080:8080"
+     - "8081:8081"
+    command: torchserve --start --model-store model-store --models resnet34=resnet34.mar
+    volumes:
+     - model-store:/home/model-server/model_store
+     
+volumes:
+  model-store:
