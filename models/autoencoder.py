@@ -123,7 +123,6 @@ class PytorchAutoencoder():
         pass
 
 
-
 class AE(nn.Module):
     def __init__(self, **kwargs):
         super().__init__()

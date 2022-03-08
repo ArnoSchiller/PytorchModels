@@ -1,4 +1,8 @@
 {
+    "framework" : "pytorch",
+    "type": "autoencoder",
     "name": "Model Test",
-    "framework" : "pytorch"
+    "dir_path": "test_model",
+    "status": "",
+    "summary": ""
 }
